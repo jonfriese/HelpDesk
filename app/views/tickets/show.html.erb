@@ -10,5 +10,14 @@
   <%= @ticket.title %>
 </p>
 
+<p>
+  <strong>Answer:</strong>
+  <% @ticket.answers.each do |answer| %>
+    <%= answer.title %>
+    <%= answer.body %>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_ticket_path(@ticket) %> |
-<%= link_to 'Back', tickets_path %>
+<%= link_to 'Back', tickets_path %> |
+<%= link_to 'New Answer', new_ticket_answer_path(@ticket) %>
