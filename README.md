@@ -1,0 +1,1 @@
+This app will allow users to create a ticket. Upon creation of that ticket an email will be sent to a support representative. The person will then be able to answer that ticket via email. The email response will be posted to the app.
